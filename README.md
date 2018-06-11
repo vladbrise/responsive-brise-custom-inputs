@@ -14,13 +14,13 @@ Preview of this inputs you can find on [CodePen](https://codepen.io/vladbrise/pe
     <div class="brise-input">
       <input type="text" name="text" required>
       <label>Name</label>
-      <span class="line"></span>
+      <span class="bottom-line"></span>
     </div>
     
 ### Textarea:
 
     <div class="brise-text">
-      <textarea name="msg" id="" cols="30" rows="10"></textarea>
+      <textarea name="msg" id="" cols="30" rows="10" required></textarea>
       <label>Name</label>
     </div>
     
@@ -90,7 +90,7 @@ To make inputs responsive - insert inputs into this divs:
         </div>
       </div>
       <div class="brise-text">
-        <textarea name="msg" id="" cols="30" rows="10"></textarea>
+        <textarea name="msg" id="" cols="30" rows="10" required></textarea>
         <label>Name</label>
       </div>
       
@@ -122,7 +122,7 @@ To make inputs responsive - insert inputs into this divs:
       
     </form>
 
-
+### All text inputs must have **required** attribute!
 
 Don't forget to link your fonts and add font-family to input selectors, by default I use **Roboto** from google fonts.
 
