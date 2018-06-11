@@ -1,12 +1,9 @@
+input,textarea {
+	/*box-sizing: border-box;*/
+}
 body {
-	font-family: 'Roboto';
+	box-sizing: border-box;
 }
-h3 {
-	font-size: 20px;
-	margin: 10px 0;
-	font-weight: 400;
-}
-
 /* wraps */
 
 .wrap-line {
@@ -48,7 +45,7 @@ h3 {
 	transform: scale(0.94) translateX(-2px);
 	color: #4485c5;
 }
-.brise-input .line {
+.brise-input .bottom-line {
 	position: absolute;
 	left: 0;
 	bottom: 0;
@@ -60,7 +57,7 @@ h3 {
 	opacity: 0;
 	z-index: 6;
 }
-.brise-input input:focus ~ .line {
+.brise-input input:focus ~ .bottom-line {
 	left: 0;
 	opacity: 1;
 }
@@ -98,7 +95,7 @@ h3 {
 }
 .brise-text label {
 	position: absolute;
-	top: 20px;
+	top: 27px;
 	left: 10px;
 	color: #999;
 	opacity: 1;
@@ -138,12 +135,12 @@ h3 {
 .brise-checkbox label .checkbox::before {
 	content: '';
 	position: absolute;
-	left: 3px;
-	top: 3px;
-	bottom: 3px;
-	right: 3px;
-	width: 11px;
-	height: 11px;
+	left: 2px;
+	top: 2px;
+	bottom: 2px;
+	right: 2px;
+	min-width: 11px;
+	min-height: 11px;
 	background: #4485c5;
 	opacity: 0;
 	transform: scale(1.5);
