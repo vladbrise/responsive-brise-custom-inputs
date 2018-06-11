@@ -104,7 +104,7 @@ h3 {
 	opacity: 1;
 	transition: .15s;
 }
-.brise-text textarea:focus ~ label {
+.brise-text textarea:focus ~ label, textarea:valid ~ label {
 	opacity: 0;
 }
 /* End Textarea */
